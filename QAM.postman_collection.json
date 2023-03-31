@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "30172640-2f5d-4d1b-8d8e-eb0d9a8ddd3a",
+		"name": "QAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24540002"
+	},
+	"item": [
+		{
+			"name": "Archive",
+			"item": [
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.get(\"variable_key\");\r",
+									"pm.globals.get(\"variable_key\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "li03.1989",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Sl01041983",
+									"type": "string"
+								}
+							]
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fields\": {\r\n       \"project\":\r\n       {\r\n          \"key\": \"U1QAN281122\"\r\n       },\r\n       \"summary\": \"UUUREST ye merry gentlemen.\",\r\n       \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jira.ithillel.com/rest/api/2/issue/U1QAN281122-104",
+							"protocol": "https",
+							"host": [
+								"jira",
+								"ithillel",
+								"com"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"U1QAN281122-104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://jsonplaceholder.typicode.com/posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://jsonplaceholder.typicode.com/posts/25",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 3,\r\n    \"id\": 25,\r\n    \"body\": \"Erth\"\r\n}"
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/25",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://jira.ithillel.com/rest/api/2/issue/U1QAN281122-94",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "li03.1989",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Sl01041983",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jira.ithillel.com/rest/api/2/issue/U1QAN281122-94",
+							"protocol": "https",
+							"host": [
+								"jira",
+								"ithillel",
+								"com"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								"U1QAN281122-94"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://jira.ithillel.com/rest/api/2/issue/",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "li03.1989",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Sl01041983",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fields\": {\r\n       \"project\": \r\n       {\r\n          \"key\": \"U1QAN281122\"\r\n       },\r\n       \"summary\": \"REST not merry gentlemen.\",\r\n       \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jira.ithillel.com/rest/api/2/issue/",
+							"protocol": "https",
+							"host": [
+								"jira",
+								"ithillel",
+								"com"
+							],
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://dummy.restapiexample.com/api/v1/employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/employees",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://dummy.restapiexample.com/api/v1/employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/employee/1",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://dummy.restapiexample.com/api/v1/employees",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/create",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://dummy.restapiexample.com/api/v1/employees",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummy.restapiexample.com/api/v1/update/21/",
+							"protocol": "https",
+							"host": [
+								"dummy",
+								"restapiexample",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"update",
+								"21",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://dummy.restapiexample.com/api/v1/employees",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"username\": \"admin\",\r\n\t\"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://automationintesting.online/auth/login",
+							"protocol": "https",
+							"host": [
+								"automationintesting",
+								"online"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://api.open-notify.org/iss-now.json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://the-dune-api.herokuapp.com/",
+							"protocol": "https",
+							"host": [
+								"the-dune-api",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.api-ninjas.com/v1/quotes?category=happiness",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Api-Key",
+								"value": "Mc3dqSGy3+3CluwPdoXR4A==MRbEsXKq9XHHsKN2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.open-notify.org/iss-now.json",
+							"protocol": "http",
+							"host": [
+								"api",
+								"open-notify",
+								"org"
+							],
+							"path": [
+								"iss-now.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "https://apod.nasa.gov/apod/image/2302/AirglowFrance_Looten_2048.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apod.nasa.gov/apod/image/2302/AirglowFrance_Looten_2048.jpg",
+					"protocol": "https",
+					"host": [
+						"apod",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"apod",
+						"image",
+						"2302",
+						"AirglowFrance_Looten_2048.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.nasa.gov/planetary/apod?api_key=bJOsezpwe5UonK6McY6MGId0uBrGD4PyAwZdAIik&date=2023-02-15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=bJOsezpwe5UonK6McY6MGId0uBrGD4PyAwZdAIik&date=2023-02-15",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "bJOsezpwe5UonK6McY6MGId0uBrGD4PyAwZdAIik"
+						},
+						{
+							"key": "date",
+							"value": "2023-02-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n<soap:Body>\r\n<NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n<ubiNum>500</ubiNum>\r\n</NumberToWords>\r\n</soap:Body>\r\n</soap:Envelope>\r\nПодякувати",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+					"protocol": "https",
+					"host": [
+						"www",
+						"dataaccess",
+						"com"
+					],
+					"path": [
+						"webservicesserver",
+						"NumberConversion.wso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.open-notify.org/iss-now.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.open-notify.org/iss-now.json",
+					"protocol": "http",
+					"host": [
+						"api",
+						"open-notify",
+						"org"
+					],
+					"path": [
+						"iss-now.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://random.dog/woof.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://random.dog/woof.json",
+					"protocol": "https",
+					"host": [
+						"random",
+						"dog"
+					],
+					"path": [
+						"woof.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.omdbapi.com/?&apikey=666f1265",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "666f1265",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?&apikey=666f1265",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "apikey",
+							"value": "666f1265"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log(\"Pre-req - Colection\")"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log(\"Test - Colection\")"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "name",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "dj",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
